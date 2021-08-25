@@ -147,7 +147,7 @@ header .opciones a{
 /*seccion de las habilidades*/
 .contenido{
     width: 100%;
-    max-width: 1000px;
+    max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
@@ -158,6 +158,7 @@ header .opciones a{
     grid-gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .item-p{
     background-color: rgba(255, 255, 255, 0);
