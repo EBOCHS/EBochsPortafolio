@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../img/fondo3.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/*seccion dela barra de navegacion*/
+header{
+    width: 100%;
+    height: 50px;
+    background: #d9dfe73b;
+    position: fixed;
+    z-index: 1;
+}
+.inner-width{
+    max-width:1000px ;
+    padding:  0 10px ;
+    margin: auto;
+    
+}
+.logoP{
+    float: left;
+    padding: 10px 0; 
+}
+.logoP img{
+    height: 50px;
+}
+.navigation-menu{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-width: 90px;
+}
+.navigation-menu a{
+    margin-left: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+.navigation-menu a:hover{
+    background: #fff;
+    color: #2f3640;
+    transform: scale(1.1);
+}
+.navigation-menu i{
+    margin-right: 8px;
+    font-size: 16px;
+}
+.menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important ;
+    color: #fff;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .menu-toggle-btn{
+        display: block !important;
+    }
+    .navigation-menu{
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        background: #172b4d;
+        top: 90px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+    .navigation-menu::before{
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #172b4d;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+
+    }
+    .navigation-menu a{
+        display: block;
+        margin: 10px 0;
+    }
+    .navigation-menu.active{
+        display: block;
+    }
+}
+
+/*seccion */
+.seccion1{
+    scroll-snap-align: start;
+    background: rgba(255, 255, 255, 0);
+    margin: auto;
+    width:100%;
+    height:auto;/*tamaño completa de la pántalla en la parte de abjo*/
+    justify-content: center;/*centra los item es la parte superior*/
+    align-items: center;/*centra e la parate media de los contenedores*/
+    display: flex;/*elemetos flexibles */
+    /*justify-content: center;jsutifica todo los contenidos de los contenedores*/
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 63px;
+}
+
+/*seccion de perfil*/
+.perfil{
+    width: 500px;
+    background: rgba(21, 22, 24, 0.26);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 600ms;
+}
+.perfil:hover{
+    transform:scale(1.1) ;
+}
+.img-perfil{
+    width: 50%;
+    border-radius: 30px;
+    background-attachment: fixed;
+}
+.perfil h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 40px 0 20px;
+}
+.perfli p{
+    text-align: justify;
+}
+.perfil .div{
+    width: 90%;
+}
+
+/*seccion de iconos del perfil*/
+.perfil-item{
+    width: 50%;
+    background: rgba(21, 22, 24, 0.26);
+    margin: 0 auto;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.644);
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 600ms;
+}
+
+.div-item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div-item .p{
+    background: rgba(0, 0, 0, 0.644);
+    width: 200px;
+    height: 170px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+    border-radius: 20px;
+}
+.p i{
+    font-size: 40px;
+}
+ a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.644);
+}
+.p:hover{
+    transform: scale(1.1);
+    background: black;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    .div-item .p{
+        width: 190px;
+    height: 90px;
+    }
+}

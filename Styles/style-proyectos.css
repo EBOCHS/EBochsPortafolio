@@ -1,0 +1,66 @@
+.seccion-proyectos{
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: center;
+    margin: auto;
+    width:100%;
+    height: auto;/*tamaño completa de la pántalla en la parte de abjo*/
+    justify-content: center;/*centra los item es la parte superior*/
+    align-items: center;/*centra e la parate media de los contenedores*/
+    display: flex;/*elemetos flexibles */
+    /*justify-content: center;jsutifica todo los contenidos de los contenedores*/
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    grid-gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+
+.container-p{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.item-p{
+    width: 40%;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: all 1000ms;
+    position: relative;
+}
+.capa-discripcion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s linear ;
+    opacity: 0;
+    cursor: pointer;
+    margin-top: 20%;
+    border-radius:20px ;
+}
+.capa-discripcion:hover{
+    background: rgba(0, 0, 0, 0.863);
+    opacity: 1;
+    color: white;
+    margin-top: 0;
+}
+
+.item-p img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}

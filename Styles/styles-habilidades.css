@@ -1,0 +1,54 @@
+.seccion-habilidades{
+    margin: auto;
+    width:100%;
+    height: auto;/*tamaño completa de la pántalla en la parte de abjo*/
+    justify-content: center;/*centra los item es la parte superior*/
+    align-items: center;/*centra e la parate media de los contenedores*/
+    display: flex;/*elemetos flexibles */
+    /*justify-content: center;jsutifica todo los contenidos de los contenedores*/
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    grid-gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 63px;
+}
+.container-h{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-item{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: black;
+    transition: all 300ms;
+    border-radius: 20px;
+}
+.item:hover{
+    transform: scale(1.1);
+}
+.item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .item{
+        width: 150px;
+        height: 150px;
+    }
+    .item img{
+        width: 150px;
+        height: 150px;
+    }
+}
