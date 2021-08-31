@@ -36,6 +36,7 @@
     border-radius: 20px;
     color: white;
     transition: 0.5s all;
+    cursor: pointer;
 }
 .datos-p .tel:hover{
     transform: scale(1.1);
