@@ -12,6 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scrollreveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
     <title>ERICK BOCH</title>
 </head>
 <body>
@@ -67,43 +68,27 @@
         </div>
     </section>
     <section class="seccion-proyectos" id="Proyectos">
-        <div class="container-p">
-            <div class="item-p">
-                <img  loading="lazy" src="img/p1.png" alt="">
-                <div class="capa-discripcion">
-                    <h1>Proyecto 1</h1>
-                   <h4>Proyecto desarrollado en lenguale de programacion PHP, javaScript, HTML5. Con arquitectura MOdelo Vista Controlador MVC.</h4>
-                   <a href="https://github.com/EBOCHS/Proyecto_Clinica.git" target="_blank">link del repositorio en GITHUB</a>
-                </div>
-                 
-            </div>
-            <div class="item-p">
-                <img  loading="lazy" src="img/p1.png" alt="">
-                <div class="capa-discripcion">
-                    <h1>Proyecto 2</h1>
-                   <h4>Proyecto desarrollado En lenguaje de programacion JAVA, programacion orientada a objetos.
-                       arquitectura modelo vista contolador
-                   </h4>
-                   <a href="https://github.com/EBOCHS/Modulo_Facturas_Proveedor.git" target="_blank">link del repositorio en GITHUB</a>
-                
+        <div class="contenedor-grid" id="grid">
+            <div class="item-grid" data-descripcion="1. proyecto 1 en php">
+                <div class="item-contenido">
+                    <img src="img/proyecto1.png" class="imagen" alt="">
                 </div>
             </div>
-            <div class="item-p">
-                <img  loading="lazy" src="img/p1.png" alt="">
-                <div class="capa-discripcion">
-                    <h1>Proyecto 3</h1>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus minus ullam reprehenderit odio blanditiis, eligendi, accusantium aliquid beatae, et vel quia laborum libero sit magni hic magnam nihil pariatur repudiandae?
-                </div>
-            </div>
-            <div class="item-p">
-                <img src="img/p1.png" alt="">
-                <div class="capa-discripcion">
-                    <h1>Proyecto 4</h1>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus minus ullam reprehenderit odio blanditiis, eligendi, accusantium aliquid beatae, et vel quia laborum libero sit magni hic magnam nihil pariatur repudiandae?
+            <div class="item-grid" data-descripcion="2. proyecto 2 en java">
+                <div class="item-contenido">
+                    <img src="img/p2.png" class="imagen" alt="">
                 </div>
             </div>
             
         </div>
+        
+    </section>
+    <section class="overlay" id="overlay">
+        <div class="overlay-img">
+            <button class="cerrar" id="cerrar"><i class="fas fa-window-close"></i></button>
+            <img src="" class="overlay-imagen" alt="">
+        </div>
+        <p class="descripcion"></p>
     </section>
     <section class="seccion-habilidades" id="habilidades">
         <div class="container-h">
@@ -172,5 +157,6 @@
         </div>
     </section>
     <script src="main.js"></script>
+  
 </body>
 </html>

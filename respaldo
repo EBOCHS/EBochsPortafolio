@@ -1,0 +1,37 @@
+<div class="container-p">
+            <div class="item-p">
+                <img  loading="lazy" src="img/proyecto1.png" alt="">
+                <div class="capa-discripcion">
+                    <h1>Proyecto 1</h1>
+                   <h4>Proyecto desarrollado en lenguale de programacion PHP, javaScript, HTML5. Con arquitectura MOdelo Vista Controlador MVC.</h4>
+                   <a href="https://github.com/EBOCHS/Proyecto_Clinica.git" target="_blank">link del repositorio en GITHUB</a>
+                </div>
+                 
+            </div>
+            <div class="item-p">
+                <img  loading="lazy" src="img/p2.png" alt="">
+                <div class="capa-discripcion">
+                    <h1>Proyecto 2</h1>
+                   <h4>Proyecto desarrollado En lenguaje de programacion JAVA, programacion orientada a objetos.
+                       arquitectura modelo vista contolador
+                   </h4>
+                   <a href="https://github.com/EBOCHS/Modulo_Facturas_Proveedor.git" target="_blank">link del repositorio en GITHUB</a>
+                
+                </div>
+            </div>
+            <div class="item-p">
+                <img  loading="lazy" src="img/p1.png" alt="">
+                <div class="capa-discripcion">
+                    <h1>Proyecto 3</h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus minus ullam reprehenderit odio blanditiis, eligendi, accusantium aliquid beatae, et vel quia laborum libero sit magni hic magnam nihil pariatur repudiandae?
+                </div>
+            </div>
+            <div class="item-p">
+                <img src="img/p1.png" alt="">
+                <div class="capa-discripcion">
+                    <h1>Proyecto 4</h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus minus ullam reprehenderit odio blanditiis, eligendi, accusantium aliquid beatae, et vel quia laborum libero sit magni hic magnam nihil pariatur repudiandae?
+                </div>
+            </div>
+            
+        </div>

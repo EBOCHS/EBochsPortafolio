@@ -8,15 +8,79 @@
     align-items: center;/*centra e la parate media de los contenedores*/
     display: flex;/*elemetos flexibles */
     /*justify-content: center;jsutifica todo los contenidos de los contenedores*/
-    flex-wrap: wrap;
     grid-template-columns: repeat(1,1fr);
-    grid-gap: 30px;
-    grid-gap: 30px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+
 
 }
 
+/*seccion de los items-grid*/
+.contenedor-grid{
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 120PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item-grid{
+    margin: 10px;
+    padding: 0;
+    width: 40%;
+}
+.item-contenido{
+    position: relative;
+}
+.imagen{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.activo{
+    display: flex;
+}
+.descripcion{
+    display: block;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+.overlay-imagen{
+    width: 750px;
+}
+.overlay-img{
+    position: relative;
+}
+.cerrar{
+    position: absolute;
+    background: none;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    right: -28px;
+    top: -28px;
+}
+
+/*seccion de prueba*/
 .container-p{
     width: 100%;
 
