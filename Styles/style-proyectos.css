@@ -1,6 +1,4 @@
 .seccion-proyectos{
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: center;
     margin: auto;
     width:100%;
     height: auto;/*tamaño completa de la pántalla en la parte de abjo*/
@@ -11,6 +9,10 @@
     grid-template-columns: repeat(1,1fr);
 
 
+}
+.titulo{
+    position: absolute;
+    top: 70px;
 }
 
 /*seccion de los items-grid*/
