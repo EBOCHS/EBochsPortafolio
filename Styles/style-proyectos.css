@@ -28,9 +28,14 @@
     margin: 10px;
     padding: 0;
     width: 40%;
+    transition: all 600ms;
+}
+.item-contenido:hover{
+    transform: scale(1.05);
 }
 .item-contenido{
     position: relative;
+    transition: all 600ms;
 }
 .imagen{
     width: 100%;
