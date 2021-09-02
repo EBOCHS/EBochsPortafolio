@@ -128,57 +128,65 @@
             </div>
         </div>
     </section>
-    <section class="seccion1 contacto" id="contacto">
-        <h1>FORMULARIO DE CONTACTO</h1>
-        <div class="contacto-c">
-            <div class="datos-p">
-                <div class="tel">
-                    <i class="fab fa-whatsapp"></i></i>Tel: +502 4085-3962
+    <form action="formulario.php" method="POST">
+        <section class="seccion1 contacto" id="contacto">
+            <h1>FORMULARIO DE CONTACTO</h1>
+            <div class="contacto-c">
+                <div class="datos-p">
+                    <div class="tel">
+                        <i class="fab fa-whatsapp"></i></i>Tel: +502 4085-3962
+                    </div>
+                    <div class="tel">
+                        <i class="fas fa-map-marker-alt"></i>zona 1. San Juan Sac. Guatemala
+                    </div>
+                    <div class="tel">
+                        <i class="far fa-envelope"></i>erickboch67@gmail.com
+                    </div>
+                    
                 </div>
-                <div class="tel">
-                    <i class="fas fa-map-marker-alt"></i>zona 1. San Juan Sac. Guatemala
+                <div class="form "  >
+                    <div class="input">
+                        <input type="text" name="nombre" required><samp class="barra"></samp>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="email" required> <samp class="barra"></samp>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="mensaje" required> <samp class="barra"></samp>
+                        <label for="">Mensaje</label>
+                    </div>
+                    <div class="input">
+                        <button name="btn_contacto" >Contactar</button>
+                    </div>
                 </div>
-                <div class="tel">
-                    <i class="far fa-envelope"></i>erickboch67@gmail.com
-                </div>
+                
             </div>
-            <div class="form "  >
-                <div class="input">
-                    <input type="email" required><samp class="barra"></samp>
-                    <label for="">Email</label>
-                </div>
-                <div class="input">
-                    <input type="text" required> <samp class="barra"></samp>
-                    <label for="">Mensaje</label>
-                </div>
-                <div class="input">
-                    <button >Contactar</button>
-                </div>
+            <div class="redes">
+                <footer class="contenedor">  
+                    <div class="redes-sociales">
+                        <div class="contenedor-icono">
+                            <a href="https://www.facebook.com/erickalexander.boch/" target="_blank" class="feceboock">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="contenedor-icono">
+                            <a href="mailto:erickboch67@gmail.com" target="_blank" class="email">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div class="contenedor-icono">
+                            <a href="https://github.com/EBOCHS" target="_blank" class="git">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            
-        </div>
-        <div class="redes">
-            <footer class="contenedor">  
-                <div class="redes-sociales">
-                    <div class="contenedor-icono">
-                        <a href="https://www.facebook.com/erickalexander.boch/" target="_blank" class="feceboock">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="contenedor-icono">
-                        <a href="mailto:erickboch67@gmail.com" target="_blank" class="email">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="contenedor-icono">
-                        <a href="https://github.com/EBOCHS" target="_blank" class="git">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </section>
+        </section>
+    </form>
+    
     <script src="particles.min.js"></script>
     <script src="confParticulas.js"></script>
     <script src="main.js"></script>
