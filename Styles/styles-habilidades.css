@@ -33,10 +33,41 @@
     transition: all 300ms;
     border-radius: 20px;
     cursor: pointer;
+    position: relative;
+}
+.tooltip{
+    color:black;
+    background: white;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: auto;
+    bottom: 210px;
+    border-radius: 20px;
+    font-size: 20px;
+    display: none;
+    transition: all 300ms;
+}
+
+.tooltip::after{
+    content: "";
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 23px;
+}
+.item:hover .tooltip{
+    display: flex;
 }
 .item:hover{
     transform: scale(1.1);
 }
+
+
 .item img{
     width: 200px;
     height: 200px;

@@ -5,15 +5,20 @@
 body{
     margin: 0;
     min-height: 100vh;
-    background-image: url(../img/fondo3.jpg);
+   background-image: url(../img/fondo3.jpg);
     background-size: cover ;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+}
+.particles-js{
+    width: 100%;
+    height: auto ;
+    position: relative;
+    background: #000;
+    display: flex;
 }
 html{
     scroll-behavior: smooth;
@@ -22,7 +27,7 @@ html{
 header{
     width: 100%;
     height: 50px;
-    background: #d9dfe73b;
+    background: #d3d9e2;
     position: fixed;
     z-index: 1;
 }
@@ -123,6 +128,7 @@ header{
     grid-gap: 30px;
     padding-top: 100px;
     padding-bottom: 63px;
+    position: relative;
 }
 
 /*seccion de perfil*/
