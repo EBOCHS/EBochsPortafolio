@@ -125,7 +125,9 @@ button:hover{
     background: black;
     color: white;
 }
-
+.btn{
+    border-radius: 10px;
+}
 footer .redes-sociales{
     display: flex;
     align-content: center;

@@ -1,11 +1,11 @@
 
-
+//menu desblegable 
 $(".menu-toggle-btn").click(function(){
   $(this).toggleClass("fa-times");
   $(".navigation-menu").toggleClass("active");
 });
 
-//scrolReveal
+//animaciones con scrolReveal
 window.sr = ScrollReveal();
 sr.reveal('.div', {
   duration: 3000,
@@ -63,7 +63,7 @@ const grid = new Muuri('.seccion-proyectos',{
 });
 
 
-//overlay
+//area del overlay seccion de proyectos
 const overlay = document.getElementById('overlay');
 document.querySelectorAll('.seccion-proyectos .contenedor-grid .item-grid img').forEach((elemento)=>{
     const ruta = elemento.getAttribute('src');

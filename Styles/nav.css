@@ -5,7 +5,7 @@
 body{
     margin: 0;
     min-height: 100vh;
-    background-image: url(../img/fondo3.jpg);
+    background-image: url(../img/the-jungle-book_1ed4_1366x768.jpg);
     background-size: cover ;
     background-repeat: no-repeat;
     background-position: center;
@@ -140,10 +140,9 @@ header{
 /*seccion de perfil*/
 .perfil{
     width: 500px;
-    background: rgba(21, 22, 24, 0.26);
+    background: rgba(21, 22, 24, 0.678);
     margin: 0 auto;
-    margin-top: 4%;
-    padding: 20px;
+    padding: 28px;
     color: white;
     text-align: center;
     border-radius: 20px;
@@ -153,7 +152,7 @@ header{
     transition: all 600ms;
 }
 .perfil:hover{
-    transform:scale(1.1) ;
+    transform:scale(1.05) ;
 }
 .img-perfil{
     width: 40%;
@@ -161,22 +160,22 @@ header{
     border-radius: 30px;
 }
 .perfil h1{
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 4px;
     font-weight: 100;
-    margin: 40px 0 20px;
+
 }
 .perfli p{
     text-align: justify;
 }
 .perfil .div{
-    width: 90%;
+    width: 100%;
 }
 
 /*seccion de iconos del perfil*/
 .perfil-item{
     width: 50%;
-    background: rgba(21, 22, 24, 0.26);
+    background: rgba(21, 22, 24, 0.678);
     margin: 0 auto;
     padding: 10px;
     color: rgba(255, 255, 255, 0.644);
@@ -193,12 +192,13 @@ header{
     height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .div-item .p{
     background: rgba(0, 0, 0, 0.644);
     width: 200px;
-    height: 170px;
+    height: 150px;
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -213,7 +213,7 @@ header{
 }
  a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.644);
+    color: white;
 }
 .p:hover{
     transform: scale(1.1);
