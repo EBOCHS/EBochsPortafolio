@@ -68,7 +68,6 @@
     </section>
     <section class="seccion-proyectos" id="Proyectos">
         <div class="contenedor-grid" id="grid">
-            <h1 class="titulo">Proyectos</h1>
             <div class="item-grid" data-descripcion="1.	Proyecto desarrollado con lenguaje de programación PHP, JavaScript, HTML5 y Bootstrap. Base de datos MySQL. arquitectura Modelo Vista Controlador (MVC).">
                 <div class="item-contenido">
                     <img src="img/proyecto1.png" class="imagen" alt="">
@@ -128,7 +127,7 @@
             </div>
         </div>
     </section>
-    <form action="formulario.php" method="POST">
+    
         <section class="seccion1 contacto" id="contacto">
             <h1>FORMULARIO DE CONTACTO</h1>
             <div class="contacto-c">
@@ -146,19 +145,19 @@
                 </div>
                 <div class="form "  >
                     <div class="input">
-                        <input type="text" name="nombre" required><samp class="barra"></samp>
+                        <input type="text" name="nombre" id="nombre" ><samp class="barra"></samp>
                         <label for="">Nombre</label>
                     </div>
                     <div class="input">
-                        <input type="email" name="email" required> <samp class="barra"></samp>
+                        <input type="email" name="email" id="email" > <samp class="barra"></samp>
                         <label for="">Email</label>
                     </div>
                     <div class="input">
-                        <input type="text" name="mensaje" required> <samp class="barra"></samp>
+                        <input type="text" name="mensaje" id="mensaje"> <samp class="barra"></samp>
                         <label for="">Mensaje</label>
                     </div>
                     <div class="input">
-                        <button name="btn_contacto" >Contactar</button>
+                        <button name="btn_contacton" id="btn_contacto" >Contactar</button>
                     </div>
                 </div>
                 
@@ -185,11 +184,12 @@
                 </footer>
             </div>
         </section>
-    </form>
+
     
     <script src="particles.min.js"></script>
     <script src="confParticulas.js"></script>
     <script src="main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
 </body>
 </html>

@@ -85,3 +85,35 @@ document.querySelectorAll('.seccion-proyectos .contenedor-grid .item-grid img').
     })
 });
 
+
+//validacion de formulario 
+$("#btn_contacto").click(()=>{
+  var nombre = document.getElementById("nombre").value;
+  var correo = document.getElementById("email").value;
+  var mensaje = document.getElementById("mensaje").value;
+  
+  $.ajax({
+    url: 'formulario.php',
+    type: 'POST',
+    data: {nombre,correo,mensaje},
+    success: (res)=>{
+      if(res=='true'){
+        Swal.fire({
+          icon: 'success',
+          title: 'Correo enviado',
+          text: 'Gracias Por Comunicarse !',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
+      }else{
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops... Error al enviar Correo',
+          text: 'Revise que ingreso todo los datos de contacto!',
+          footer: '<a href="">Why do I have this issue?</a>'
+        })
+      }
+      
+    }
+  })
+  
+})
