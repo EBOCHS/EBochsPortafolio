@@ -91,7 +91,7 @@ $("#btn_contacto").click(()=>{
   var nombre = document.getElementById("nombre").value;
   var correo = document.getElementById("email").value;
   var mensaje = document.getElementById("mensaje").value;
-  
+
   $.ajax({
     url: 'formulario.php',
     type: 'POST',
@@ -101,9 +101,12 @@ $("#btn_contacto").click(()=>{
         Swal.fire({
           icon: 'success',
           title: 'Correo enviado',
-          text: 'Gracias Por Comunicarse !',
+          text: 'Gracias Por Contactarse!',
           footer: '<a href="">Why do I have this issue?</a>'
         })
+        $("#nombre").val("");
+        $("#email").val("");
+        $("#mensaje").val("");
       }else{
         Swal.fire({
           icon: 'error',
